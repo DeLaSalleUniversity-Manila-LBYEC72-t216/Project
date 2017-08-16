@@ -45,11 +45,13 @@ int main()
  void pass();
  void exp();
 
- pass();
+ 	pass();
+ 
+	load();
+
+	menu();
 
  while((option=cin.get())!='9'){
- 	
-	load();
 
 	switch(option)
 
@@ -80,6 +82,8 @@ int main()
 	        exp();
 	        break;
 	}
+	
+	load();
 	
 	menu();
 	
