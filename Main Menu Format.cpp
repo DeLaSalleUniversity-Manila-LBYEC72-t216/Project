@@ -51,8 +51,6 @@ int main()
  	
 	load();
 
-	menu();
-
 	switch(option)
 
  	{
@@ -82,6 +80,9 @@ int main()
 	        exp();
 	        break;
 	}
+	
+	menu();
+	
  }
 
 return 0;
