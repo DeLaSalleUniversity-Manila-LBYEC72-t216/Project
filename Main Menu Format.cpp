@@ -46,50 +46,45 @@ int main()
  void exp();
 
  pass();
-	
- load();
 
- menu();
+ while((option=cin.get())!='9'){
+ 	
+	load();
 
- while((option=cin.get())!='9')
+	menu();
 
- {
+	switch(option)
 
-  switch(option)
+ 	{
 
-  {
+		case '1':
+	         build();
+	         break;
+		case '2':
+	         list();
+	         break;
+		case '3':
+	         insert();
+	         break;
+		case '4':
+	         deletes();
+	         break;
+		case '5':
+	        edit();
+	        break;
+		case '6':
+	        search();
+	        break;
+		case '7':
+	        sort();
+	        break;
+		case '8':
+	        exp();
+	        break;
+	}
+ }
 
-	case '1':
-         build();
-         break;
-	case '2':
-         list();
-         break;
-	case '3':
-         insert();
-         break;
-	case '4':
-         deletes();
-         break;
-	case '5':
-        edit();
-        break;
-	case '6':
-        search();
-        break;
-	case '7':
-        sort();
-        break;
-	case '8':
-        exp();
-        break;
-    }
-
-menu();
-
-  }
-
-  return 0;
+return 0;
 
 }
  
@@ -850,21 +845,3 @@ void exp(){
 	cout<<"\n\nPress any key to go back... ";
 	getch();
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
