@@ -45,7 +45,7 @@ void start_item(const unsigned int menu_number) {
   case 1:{
   		first_item();
         puts("Calling first item...");
-	 	ShellExecute(NULL, "open", "MainMenu.exe", NULL, NULL, SW_SHOWNORMAL);		
+	 	ShellExecute(NULL, "open", "Main Menu Format.exe", NULL, NULL, SW_SHOWNORMAL);		
   		break;
   		}
   case 2:{
